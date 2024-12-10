@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kefrok</title>
+    <link rel="icon" type="image/png" href="../css/Imagenes/iconoweb.png">
+    <link href="https://fonts.cdnfonts.com/css/futura-display" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/adumu-inline" rel="stylesheet">
+    <link rel="stylesheet" href="../css/formulario.css"> <!-- Vincula el archivo CSS externo -->
+</head>
+
+<body>
+
+
+    <!-- Formulario de entrada -->
+    <div id="form-container">
+        <h1>¡Pon tu alias y juega!</h1>
+        <input type="text" id="alias" placeholder="Alias: SoyGamerPro" required>
+        <button onclick="guardarDatos()">Jugar</button>
+    </div>
+
+    <!-- Contenedor de rectángulos (inicialmente ocultos) -->
+    <div id="rectangles-container" style="display: none;">
+        <h1>Elija su nivel dificultad</h1>
+        <div id="facil" class="rectangulo" onclick="seleccionarDificultad('facil')"></div>
+        <div id="medio" class="rectangulo" onclick="seleccionarDificultad('medio')"></div>
+        <div id="dificil" class="rectangulo" onclick="seleccionarDificultad('dificil')"></div>
+        <div id="extremo" class="rectangulo" onclick="seleccionarDificultad('extremo')"></div>
+    
+        <button onclick="window.location.href='comoSeJuega.html'">¿Cómo se juega?</button>
+    </div>
+    <div id="volverInicio" onclick="volverInicio()">
+        Volver al Inicio
+    </div>
+    <audio id="reproductor" autoplay loop>
+        <source src="../audio/musica.mp3" type="audio/mp3">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+    <script src="../js/reproductor.js"></script>
+    <script src="../js/formulario.js"></script> <!-- Vincula el archivo JS externo -->
+</body>
+
+</html>

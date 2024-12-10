@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Configuraciones</title>
+    <link rel="icon" type="image/png" href="../css/Imagenes/iconoweb.png" >
+    <link rel="stylesheet" href="../css/config.css">
+</head>
+
+<body>
+    <header>
+        <h1>Panel de Configuraciones</h1>
+    </header>
+    <main class="settings-grid">
+        <section class="setting-item">
+            <h2>Sonido</h2>
+            <label for="volumen">Volumen</label>
+            <input type="range" id="volumen" min="0" max="100" value="50">
+            <p>Volumen actual: <span id="volumen-valor">50</span>%</p>
+        </section>
+
+        <section class="setting-item">
+            <h2>Pantalla</h2>
+            <label for="brillo">Brillo</label>
+            <input type="range" id="brillo" min="0" max="100" value="70">
+            <p>Brillo actual: <span id="brillo-valor">70</span>%</p>
+        </section>
+
+        <section class="setting-item">
+            <h2>Conectividad</h2>
+            <label for="wifi">WiFi</label>
+            <input type="checkbox" id="wifi" checked>
+            <p>Estado WiFi: <span id="wifi-estado">Activado</span></p>
+        </section>
+
+        <section class="setting-item">
+            <h2>Modo Oscuro</h2>
+            <label for="modo-oscuro">Activar</label>
+            <input type="checkbox" id="modo-oscuro">
+            <p>Modo oscuro: <span id="modo-oscuro-estado">Desactivado</span></p>
+        </section>
+    </main>
+    <div id="volverInicio" onclick="volverInicio()">
+        Volver al Inicio
+    </div>
+    <audio id="reproductor" autoplay loop>
+        <source src="../audio/musica.mp3" type="audio/mp3">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+    <footer>
+        <p>&copy; 2024 Configuraciones</p>
+    </footer>
+    <script src="../js/reproductor.js"></script>
+    <script src="../js/config.js"></script>
+    <script src="../js/sonido.js"></script>
+</body>
+
+</html>

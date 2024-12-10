@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo se juega</title>
+    <link rel="icon" type="image/png" href="../css/Imagenes/iconoweb.png" >
+    <link rel="stylesheet" href="../css/info.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>¿Cómo se juega?</h1>
+        <p>El juego de memoria consiste en un conjunto de cartas que están colocadas boca abajo. El objetivo es emparejar las cartas que tienen el mismo valor o imagen, y ganar puntos por cada par que se descubra. Sin embargo, hay cartas especiales con efectos únicos que cambiarán el curso del juego. A continuación, te explicamos qué hace cada una de estas cartas especiales:</p>
+        
+        <div class="card-explanation">
+            <h2>Carta Joker</h2>
+            <img src="../js/CartasEspeciales/joker.jpg" alt="Carta Joker" class="card-image">
+            <p><strong>Efecto:</strong> Al revelar la carta Joker, se reinicia el tablero de juego.</p>
+            <p><strong>Acción:</strong> Se genera un nuevo conjunto de cartas aleatorias y se restablece el tiempo del temporizador.</p>
+            <p><strong>Propósito:</strong> Esta carta es útil para reiniciar el juego en caso de que quieras empezar de nuevo o tengas dificultades para continuar.</p>
+        </div>
+
+        <div class="card-explanation">
+            <h2>Carta Estrella</h2>
+            <img src="../js/CartasEspeciales/estrella.jpg" alt="Carta Estrella" class="card-image">
+            <p><strong>Efecto:</strong> Todas las cartas se vuelven visibles durante 3 segundos.</p>
+            <p><strong>Acción:</strong> Todas las cartas del tablero se voltean y muestran su imagen durante 3 segundos.</p>
+            <p><strong>Propósito:</strong> Te ayuda a memorizar la posición de las cartas para emparejarlas más fácilmente.</p>
+        </div>
+
+        <div class="card-explanation">
+            <h2>Carta Bank Devil</h2>
+            <img src="../js/CartasEspeciales/bankdevil.jpg" alt="Carta Bank Devil" class="card-image">
+            <p><strong>Efecto:</strong> Pierdes 10 puntos.</p>
+            <p><strong>Acción:</strong> El puntaje del jugador se reduce en 10 puntos.</p>
+            <p><strong>Propósito:</strong> Esta carta es un obstáculo que reduce el puntaje del jugador, añadiendo dificultad al juego.</p>
+        </div>
+
+        <div class="card-explanation">
+            <h2>Carta Peste</h2>
+            <img src="../js/CartasEspeciales/peste.jpg" alt="Carta Peste" class="card-image">
+            <p><strong>Efecto:</strong> Pierdes 5 puntos.</p>
+            <p><strong>Acción:</strong> Se resta 5 puntos del puntaje del jugador.</p>
+            <p><strong>Propósito:</strong> Al igual que la carta Bank Devil, esta carta penaliza al jugador, reduciendo su puntaje.</p>
+        </div>
+
+        <div class="card-explanation">
+            <h2>Carta Champiñón</h2>
+            <img src="../js/CartasEspeciales/champiñon.jpg" alt="Carta Champiñón" class="card-image">
+            <p><strong>Efecto:</strong> Se suman 10 segundos al tiempo del jugador.</p>
+            <p><strong>Acción:</strong> El temporizador se incrementa en 10 segundos.</p>
+            <p><strong>Propósito:</strong> Esta carta es positiva, dándote más tiempo para completar el juego.</p>
+        </div>
+
+        <div class="card-explanation">
+            <h2>Carta Browser</h2>
+            <img src="../js/CartasEspeciales/browser.jpg" alt="Carta Browser" class="card-image">
+            <p><strong>Efecto:</strong> Se restan 20 segundos del tiempo del jugador.</p>
+            <p><strong>Acción:</strong> El temporizador se reduce en 20 segundos.</p>
+            <p><strong>Propósito:</strong> Esta carta añade presión al jugador al reducir su tiempo, haciéndolo más desafiante.</p>
+        </div>
+
+        <div class="card-explanation">
+            <h2>Carta MiniBrowser</h2>
+            <img src="../js/CartasEspeciales/minibrowser.jpg" alt="Carta MiniBrowser" class="card-image">
+            <p><strong>Efecto:</strong> Se restan 10 segundos del tiempo del jugador.</p>
+            <p><strong>Acción:</strong> El temporizador se reduce en 10 segundos.</p>
+            <p><strong>Propósito:</strong> Similar a la carta Browser, pero con un impacto menor en el tiempo.</p>
+        </div>
+
+        <div class="card-explanation">
+            <h2>Carta Flor</h2>
+            <img src="../js/CartasEspeciales/flor.jpg" alt="Carta Flor" class="card-image">
+            <p><strong>Efecto:</strong> Se suman 20 segundos al tiempo del jugador.</p>
+            <p><strong>Acción:</strong> El temporizador se incrementa en 20 segundos.</p>
+            <p><strong>Propósito:</strong> Esta carta te da más tiempo, ayudando a completar el juego con menos presión.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
