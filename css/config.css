@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #7c7c7c;
+}
+
+
+header {
+    background-color: #6200ea;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.settings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.setting-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+input[type="range"],
+input[type="checkbox"] {
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #6200ea;
+    color: white;
+}
+#volverInicio {
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    background-color: #ff00fb;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: url('/Imagenes/moradoAPuntero.png'), auto;
+    text-align: center;
+    position: fixed; /* Mantenerlo visible en la posición */
+    bottom: 20px; /* A 20px del fondo */
+    left: 50%; /* Centrar horizontalmente respecto al viewport */
+    transform: translateX(-50%); /* Ajustar para que quede centrado */
+}
+
+#volverInicio:hover {
+    background-color: #890074;
+}

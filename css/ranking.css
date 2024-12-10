@@ -1,0 +1,95 @@
+/* Estilos para el cuerpo de la página */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #2e004f; /* Fondo morado oscuro */
+    background-image: url('../css/Imagenes/fondoKefrok.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    cursor: url('../css/Imagenes/blancoPuntero.png'), auto;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #7c7c7c;
+}
+
+/* Estilo para el encabezado */
+h1 {
+    font-family: 'Adumu Inline', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    padding: 30px;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+    background: linear-gradient(20deg, #ff0080, #28023d);
+    -webkit-background-clip: text;
+}
+
+/* Estilo principal de la tabla */
+#rankingTable {
+    width: 90%;
+    margin: 20px auto; /* Centrar la tabla */
+    background-color: #ff0073; /* Fondo morado oscuro */
+    color: #ffe6f7; /* Texto rosa claro */
+    border: 1px solid #d1007e; /* Borde rosa oscuro */
+    box-shadow: 0 4px 15px rgba(209, 0, 126, 0.9); /* Sombra en rosa oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Respeta los bordes redondeados */
+}
+
+/* Estilos para las celdas de la tabla */
+#rankingTable th, #rankingTable td {
+    padding: 12px 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Encabezados de la tabla */
+#rankingTable th {
+    background-color: #3b0361; /* Morado oscuro para encabezados */
+    color: #f3b6d8; /* Rosa claro para el texto */
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: adumu;
+    border-bottom: 2px solid #d1007e; /* Línea separadora en rosa oscuro */
+}
+
+/* Estilo para las filas pares */
+#rankingTable tbody tr:nth-child(even) {
+    background-color: #a108ed; /* Morado claro */
+}
+
+/* Estilo para las filas impares */
+#rankingTable tbody tr:nth-child(odd) {
+    background-color: #7b05c4; /* Morado oscuro */
+}
+
+/* Efecto hover para las filas */
+#rankingTable tbody tr:hover {
+    background-color: #f71097; /* Morado brillante al pasar el mouse */
+    color: #ffe6f7; /* Texto en rosa claro al hacer hover */
+}
+
+#volverInicio {
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    background-color: #ff00fb;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: url('../css/Imagenes/moradoAPuntero.png'), auto;
+    text-align: center;
+    position: fixed; /* Mantenerlo visible en la posición */
+    bottom: 20px; /* A 20px del fondo */
+    left: 50%; /* Centrar horizontalmente respecto al viewport */
+    transform: translateX(-50%); /* Ajustar para que quede centrado */
+}
+
+#volverInicio:hover {
+    background-color: #890074;
+}

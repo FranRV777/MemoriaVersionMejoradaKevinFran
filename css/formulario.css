@@ -1,0 +1,155 @@
+/* Estilos para el fondo y el contenedor principal */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #2e004f; /* Fondo morado oscuro */
+    background-image: url('../css/Imagenes/fondoKefrok.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    cursor: url('../css/Imagenes/blancoPuntero.png'), auto;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #7c7c7c;
+}
+
+
+/* Estilo del encabezado */
+h1 {
+    font-family: 'Adumu Inline', sans-serif;
+    font-size: 40px;
+    color: #df00b3;
+}
+
+/* Estilos para el formulario */
+#form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilos para los inputs del formulario */
+#form-container input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #ff00b3;
+    width: 300px;
+}
+
+/* Estilo para el botón de guardar */
+#form-container button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff00b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: url('../css/Imagenes/blancoPuntero.png'), auto;
+}
+
+/* Estilo para los rectángulos de dificultad (en columna) */
+#rectangles-container {
+    display: flex;
+    flex-direction: column; /* Cambiado a columna */
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Espaciado superior */
+}
+
+/* Estilo para los rectángulos de dificultad */
+.rectangulo {
+    width: 700px; /* Ancho más grande para los rectángulos */
+    height: 100px; /* Alto más pequeño */
+    margin: 20px 0; /* Espaciado vertical */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px; /* Texto más grande */
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: url('../css/Imagenes/moradoAPuntero.png'), auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el tamaño y sombra */
+}
+
+/* Colores de los rectángulos de dificultad */
+#facil {
+    background-image: url('../css/Imagenes/Paises.png');
+    background-size: cover; /* Asegurarse de que la imagen cubra todo el área del div */
+}
+
+#medio {
+    background-image: url('../css/Imagenes/Animal.png');
+    background-size: cover; /* Asegurarse de que la imagen cubra todo el área del div */
+}
+
+#dificil {
+    background-image: url('../css/Imagenes/Clubes.png');
+    background-size: cover; /* Asegurarse de que la imagen cubra todo el área del div */
+}
+
+#extremo {
+    background-image: url('../css/Imagenes/Colores.png');
+    background-size: cover; /* Asegurarse de que la imagen cubra todo el área del div */
+}
+
+/* Efecto hover para aumentar el tamaño y agregar sombra */
+.rectangulo:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+    box-shadow: 0 0 20px 10px rgba(210, 0, 218, 0.8); /* Sombra blanca */
+}
+
+button {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Texto blanco */
+    font-family: 'Futura Display', sans-serif; /* Usando la fuente Futura */
+    font-size: 20px; /* Tamaño de fuente */
+    padding: 15px 32px; /* Espaciado dentro del botón */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el puntero cuando se pasa el ratón */
+    transition: background-color 0.3s, transform 0.3s; /* Efecto de transición para el cambio de color y movimiento */
+    margin-top: 20px; /* Margen superior para separarlo del contenido superior */
+    width: 100%; /* Hacer que el botón ocupe todo el ancho del contenedor */
+    max-width: 300px; /* Limitar el ancho máximo del botón */
+    display: block; /* Para que el botón sea un bloque de nivel de bloque */
+    margin-left: auto; /* Centrar el botón */
+    margin-right: auto; /* Centrar el botón */
+}
+
+/* Efecto cuando el botón es hover (al pasar el ratón por encima) */
+button:hover {
+    background-color: #45a049; /* Cambia el color de fondo a un verde más oscuro */
+    transform: translateY(-3px); /* Eleva ligeramente el botón */
+}
+
+/* Estilo de cuando el botón está en foco (clicado) */
+button:focus {
+    outline: none; /* Eliminar el borde predeterminado al hacer clic */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Sombra alrededor del botón cuando está enfocado */
+}
+
+#volverInicio {
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    background-color: #ff00fb;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: url('../css/Imagenes/moradoAPuntero.png'), auto;
+    text-align: center;
+    position: fixed; /* Mantenerlo visible en la posición */
+    bottom: 20px; /* A 20px del fondo */
+    left: 50%; /* Centrar horizontalmente respecto al viewport */
+    transform: translateX(-50%); /* Ajustar para que quede centrado */
+}
+
+#volverInicio:hover {
+    background-color: #890074;
+}
